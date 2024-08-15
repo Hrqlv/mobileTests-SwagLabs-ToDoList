@@ -6,22 +6,34 @@ const Page = require('./page');
 
 class TestsE2EPage extends Page {
 
+    async habilitarPermiçoes() {
+        await $(obterElementoPorID({ testID: 'com.android.permissioncontroller:id/permission_allow_button' })).click()
+    }
+
+    async pularEtapa() {
+        await $(obterElementoPorID({ testID: 'com.socialnmobile.dictapps.notepad.color.note:id/btn_start_skip' })).click()
+    }
+
     async validarTituloInicial() {
-        await expect($(obterElementoPorTexto('Falta pouco pra matar sua fome!'))).toBeDisplayed({ timeout: 5000 })
-        await expect($(obterElementoPorTexto('Faça login e aproveite!'))).toBeDisplayed({ timeout: 5000 })
+        await expect($(obterElementoPorID({ testID: 'com.socialnmobile.dictapps.notepad.color.note:id/logo_image' }))).toBeDisplayed({ timeout: 5000 })
     }
 
-    async realizarLogin(email, senha) {
-        await $(obterElementoPorID({ testID: 'email' })).setValue(email)
-        await $(obterElementoPorID({ testID: 'password' })).setValue(senha)
+    async clicarBtnAddTarefa() {
+        await $(obterElementoPorID({ testID: 'com.socialnmobile.dictapps.notepad.color.note:id/main_btn1' })).click()
     }
 
-    async clicarBtnEntrar() {
-        await $(obterElementoPorID({ testID: 'login-button' })).click()
+    async clicarBtnCheckList() {
+        await $(obterElementoPorTexto('Checklist')).click()
     }
 
-    async validarMensagemErro() {
-        await expect($(obterElementoPorTexto('Erro ao realizar login'))).toBeDisplayed({ timeout: 3000 })
+    async addItem() {
+        await $(obterElementoPorTexto('Add Item')).click()
+        await $(obterElementoPorID({ testID: 'com.socialnmobile.dictapps.notepad.color.note:id/edit' })).setValue('Realizar Testes')
+        await $(obterElementoPorTexto('OK')).click()
+    }
+
+    async validarItemEscrito() {
+        await expect($(obterElementoPorID({ testID: 'com.socialnmobile.dictapps.notepad.color.note:id/text' }))).toBeDisplayed()
     }
 }
 
