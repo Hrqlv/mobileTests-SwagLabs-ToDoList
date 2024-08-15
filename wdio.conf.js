@@ -7,7 +7,7 @@ exports.config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    port: 4725,
+    port: 4723,
     //
     // ==================
     // Specify Test Files
@@ -56,7 +56,7 @@ exports.config = {
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
         'appium:deviceName': 'Pixel 3',
-        'appium:platformVersion': '12.0',
+        'appium:platformVersion': '11.0',
         'appium:automationName': 'UiAutomator2',
         'appium:app': path.join(process.cwd(), 'app/android/ANDROID -LITE - qazandofood.apk')
     }],
