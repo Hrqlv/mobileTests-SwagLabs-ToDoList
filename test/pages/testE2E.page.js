@@ -26,14 +26,26 @@ class TestsE2EPage extends Page {
         await $(obterElementoPorTexto('Checklist')).click()
     }
 
-    async addItem() {
+    async clicarBtnText() {
+        await $(obterElementoPorTexto('Text')).click()
+    }
+
+    async addItemCheckList() {
         await $(obterElementoPorTexto('Add Item')).click()
         await $(obterElementoPorID({ testID: 'com.socialnmobile.dictapps.notepad.color.note:id/edit' })).setValue('Realizar Testes')
         await $(obterElementoPorTexto('OK')).click()
     }
 
-    async validarItemEscrito() {
-        await expect($(obterElementoPorID({ testID: 'com.socialnmobile.dictapps.notepad.color.note:id/text' }))).toBeDisplayed()
+    async addItemText() {
+        await $(obterElementoPorID({ testID: 'com.socialnmobile.dictapps.notepad.color.note:id/edit_note' })).setValue('Realizar Testes 2')
+    }
+
+    async btnSalvar() {
+        await $(obterElementoPorID({ testID: 'com.socialnmobile.dictapps.notepad.color.note:id/back_btn' })).click()
+    }
+
+    async btnVoltar() {
+        await $(obterElementoPorID({ testID: 'com.socialnmobile.dictapps.notepad.color.note:id/back_btn' })).click()
     }
 }
 

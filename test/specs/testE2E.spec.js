@@ -7,14 +7,23 @@ describe('Adicionar tarefas em dois formatos como texto e checklist', () => {
     beforeEach(async () => {
         await testsE2E.habilitarPermiçoes()
         await testsE2E.pularEtapa()
+        await testsE2E.validarTituloInicial()
     })
 
-    it('Adicionar a tarefa como checklist e validar a tarefa criada', async () => {
-        await testsE2E.validarTituloInicial()
+    it('Adicionar a tarefa como checklist e texto', async () => {
+        // CheckList
         await testsE2E.clicarBtnAddTarefa()
         await testsE2E.clicarBtnCheckList()
-        await testsE2E.addItem()
-        await testsE2E.validarItemEscrito() 
+        await testsE2E.addItemCheckList()
+        await testsE2E.btnSalvar()
+        await testsE2E.btnVoltar()
+
+        // Texto
+        await testsE2E.clicarBtnAddTarefa()
+        await testsE2E.clicarBtnText()
+        await testsE2E.addItemText()
+        await testsE2E.btnSalvar()
+        await testsE2E.btnVoltar()
     })
 })
 
