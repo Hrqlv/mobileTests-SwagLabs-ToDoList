@@ -55,7 +55,7 @@ exports.config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        'appium:deviceName': 'Pixel 2',
+        'appium:deviceName': 'Pixel 3',
         'appium:platformVersion': '11.0',
         'appium:automationName': 'UiAutomator2',
         'appium:app': path.join(process.cwd(), 'app/android/ColorNote+Notepad.apk')
