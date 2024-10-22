@@ -3,7 +3,7 @@ Certifique-se de ter o Appium e o Webdriver.io baixado no pc e as variaveis de a
 ```
 
 ```
-Eu realizei dois projeto MOBILE em um só, fiz duas config pra cada projeto onde ta configurado de acordo com o diretorio da spec de cada app e duas specs e pages, respectivamente respeitando o nome do app. Bem como, fiz dois script pra rodar cada test.
+Realizei dois projeto MOBILE em um só, foi feito duas config pra cada projeto onde ta configurado de acordo com o diretorio da spec de cada app e duas specs e pages, respectivamente respeitando o nome do app. Bem como, dois script pra rodar cada test.
 ```
 
 # Mobile Automation Tests
