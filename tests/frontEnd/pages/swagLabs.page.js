@@ -93,7 +93,8 @@ async validarMensagemErroCrendenciasErrada() {
   await expect($(obterElementoPorTexto('Username and password do not match any user in this service.')).isDisplayed()).toBeTruthy()
 }
 
-// Home
+ // Home
+
 async voltarHome() {
   await $(obterElementoPorTexto('BACK HOME')).click();
   await $('~test-Menu').click()

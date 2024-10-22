@@ -3,7 +3,7 @@ const { SwagLabsPage } = require('../pages/swagLabs.page')
 
 let swagLabs = new SwagLabsPage();
 
-// Fluxo de sucesso de uma compra de produto
+  // Fluxo de sucesso de uma compra de produto
 
 describe('Realizar o login e após fazer o login realizar uma compra com os produtos que desejar', () => {
     it('Realizar login', async () => {
@@ -29,7 +29,7 @@ describe('Realizar o login e após fazer o login realizar uma compra com os prod
     })
 })
 
-// Fluxo de erro / alternativo pata tela de Login 
+  // Fluxo de erro / alternativo pata tela de Login 
 
 describe('Realizar o fluxo alternativo / negativo da tela de login', () => {
     it('Validar erro de login com credenciais vazias para nome e senha', async () => {
@@ -48,7 +48,7 @@ describe('Realizar o fluxo alternativo / negativo da tela de login', () => {
     })
 })
 
-// Fluxo de erro / alternativo para tela de Checkout:information 
+  // Fluxo de erro / alternativo para tela de Checkout:information 
 
 describe('Realizar o fluxo alternativo / negativo da tela de Checkout:information', async () => {
     beforeEach(async () => {
