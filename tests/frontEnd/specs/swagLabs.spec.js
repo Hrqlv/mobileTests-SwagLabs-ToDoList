@@ -68,7 +68,7 @@ describe('Realizar o fluxo alternativo / negativo da tela de Checkout:informatio
         await swagLabs.formCheckoutError('Henrique')
         await swagLabs.btnContinue()
         await swagLabs.validarMensagemSegundoNomeObrigatorio()
-        await swagLabs.formCheckoutError('', 'Lopes Velozo')
+        await swagLabs.formCheckoutError('Henrique', 'Lopes Velozo')
         await swagLabs.btnContinue()
         await swagLabs.validarMensagemZipCodeObrigatorio()
         await swagLabs.formCheckoutError('Henrique', 'Lopes Velozo', '18401220')
