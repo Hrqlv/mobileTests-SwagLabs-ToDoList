@@ -1,7 +1,7 @@
 const { expect } = require('@wdio/globals');
 const { $ } = require('@wdio/globals');
-const { obterElementoPorID, obterElementoPorTexto } = require('../../../suporte/comandos')
-const Page = require('./page');
+const { obterElementoPorID, obterElementoPorTexto } = require('../../../../suporte/comandos')
+const Page = require('../../swagLabs/pages/page');
 
 
 class ToDoListPage extends Page {

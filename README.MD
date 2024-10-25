@@ -3,8 +3,11 @@ Certifique-se de ter o Appium e o Webdriver.io baixado no pc e as variaveis de a
 ```
 
 ```
-Realizei dois projeto MOBILE em um só, foi feito duas config pra cada projeto onde ta configurado de acordo com o diretorio da spec de cada app e duas specs e pages, respectivamente respeitando o nome do app. Bem como, dois script pra rodar cada test.
-Onde o projeto SwagLabs é um app de loja de roupas, compra de produto e o app ToDoList é uma lista de tarefas onde pode adicionar como texto e checklist.
+Realizei dois projetos em um só, onde foi feito duas Config para cada projeto, onde está configurado conforme o diretório da spec de cada app, sendo assim, dois script para rodar cada teste.
+
+O app SwagLabs é um projeto de loja de roupas, compra de produtos, e o app ToDoList é uma lista de tarefas, onde se pode adicionar como texto e checklist.
+
+Utilizei as melhores práticas para automatizar, como a criação de funções, suporte de comando a serem utilizados, etc. Isso facilita muito!
 ```
 
 # Mobile Automation Tests
