@@ -15,7 +15,7 @@ Utilizei as melhores práticas para automatizar, como a criação de funções, 
 ### Clone Project 
 
 ```
-git clone https://github.com/Hrqlv/mobileTests.git
+git clone https://github.com/Hrqlv/mobileTests-SwagLabs-ToDoList.git
 ```
 ### Install dependencies
 
