@@ -2,7 +2,7 @@ const { faker } = require('@faker-js/faker');
 const { expect } = require('@wdio/globals');
 const { $ } = require('@wdio/globals');
 const { obterElementoPorID, obterElementoPorTexto, scrollarEAguardarClique } = require('../../../../suporte/comandos')
-const Page = require('../../pages/page');
+const Page = require('./page');
 
 const firstName = faker.person.firstName();
 const lastName = faker.person.lastName();

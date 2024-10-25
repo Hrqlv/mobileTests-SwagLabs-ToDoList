@@ -24,7 +24,7 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './tests/frontEnd/specs/toDoList.spec.js'
+        './tests/frontEnd/toDoList/specs/toDoList.spec.js'
     ],
     // Patterns to exclude.
     exclude: [

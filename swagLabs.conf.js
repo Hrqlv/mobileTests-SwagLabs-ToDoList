@@ -24,7 +24,7 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './tests/frontEnd/specs/swagLabs.spec.js'
+        './tests/frontEnd/swagLabs/specs/swagLabs.spec.js'
     ],
     // Patterns to exclude.
     exclude: [
